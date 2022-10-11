@@ -1,0 +1,61 @@
+.customerInfo {
+      width: full;
+      display: flex;
+      flex-wrap: wrap;
+      margin: 30px 20px 0 0;
+      padding-left: 40px;
+      justify-content: space-between;
+}
+
+.label {
+      font-size: larger;
+      font-weight: bolder;
+}
+
+#customerName {
+      margin: 20px 20px 20px 0;
+      border-radius: 5px;
+      width: 40vw;
+      padding: 10px 0 10px 10px;
+
+}
+
+#customerEmail {
+      margin: 20px 20px 20px 0;
+      border-radius: 5px;
+      width: 40vw;
+      padding: 10px 0 10px 10px;
+}
+
+#customerPhone {
+      margin: 20px 20px 20px 0;
+      border-radius: 5px;
+      width: 30vw;
+      padding: 10px 0 10px 10px;
+}
+
+.feedback {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 96.7%;
+      justify-content: space-between;
+}
+
+.questions {
+      display: flex;
+      flex-direction: column;
+      width: 40vw;
+      padding: 20px 20px 20px 20px;
+      margin: 10px 0 20px 20px;
+      font-size: large;
+      font-weight: bolder;
+}
+
+.questionsRatings {
+      display: flex;
+      justify-content: space-between;
+      width: 20vw;
+      margin: 15px 10px 10px 0;
+      font-weight: normal;
+}
