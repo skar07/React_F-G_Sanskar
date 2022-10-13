@@ -12,26 +12,28 @@
       font-weight: bolder;
 }
 
-#customerName {
-      margin: 20px 20px 20px 0;
-      border-radius: 5px;
-      width: 40vw;
-      padding: 10px 0 10px 10px;
-
+.label:after {
+      content: " *";
+      color: red;
 }
 
-#customerEmail {
+#customerText {
       margin: 20px 20px 20px 0;
       border-radius: 5px;
       width: 40vw;
+      height: 5vh;
       padding: 10px 0 10px 10px;
+      border: 0.75px solid #8D8D8D80;
+
 }
 
 #customerPhone {
       margin: 20px 20px 20px 0;
       border-radius: 5px;
       width: 30vw;
+      height: 5vh;
       padding: 10px 0 10px 10px;
+      border: 0.75px solid #8D8D8D80;
 }
 
 .feedback {
@@ -52,10 +54,35 @@
       font-weight: bolder;
 }
 
+.questions:after {
+      content: " *";
+      color: red;
+}
+
 .questionsRatings {
       display: flex;
       justify-content: space-between;
       width: 20vw;
       margin: 15px 10px 10px 0;
       font-weight: normal;
+}
+
+#submit {
+      width: 9vw;
+      height: 5vh;
+      background: #48A44C;
+      border-radius: 3px;
+      opacity: 1;
+      color: white;
+      border: none;
+      text-align: center;
+      right: 7.2%;
+      position: absolute;
+      font-size: large;
+      margin-top: 100px;
+}
+
+#submit:hover{
+      background: #358539;
+      cursor:pointer
 }

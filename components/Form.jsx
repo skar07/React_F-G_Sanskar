@@ -1,21 +1,22 @@
 import React from 'react'
 import styles from '../styles/Form.module.css'
+import ContainerStyle from '../styles/FormContainer.module.css'
 
 export const Form = () => {
       return (
-            <form>
+            <form action='../pages/table' method='post' className={ContainerStyle.formContainer}>
                   <div className={styles.customerInfo}>
                         <label className={styles.label}>
                               Customer Name: <br />
-                              <input id={styles.customerName} type='text' name='name' placeholder='E.g. John Doe' />
+                              <input id={styles.customerText} type='text' name='name' placeholder='E.g. John Doe' required />
                         </label>
                         <label className={styles.label}>
                               Email: <br />
-                              <input id={styles.customerEmail} type='email' name='email' placeholder='example@mail.com' />
+                              <input id={styles.customerText} type='email' name='email' placeholder='example@mail.com' required />
                         </label>
                         <label className={styles.label}>
                               Phone: <br />
-                              <input id={styles.customerPhone} type='tel' name='phone' placeholder='123-45-678-90' pattern='[0-9]{3}-[0-9]{2}-[0-9]{3}-[0-9]{2}' />
+                              <input id={styles.customerPhone} type='tel' name='phone' placeholder='123-45-678-90' pattern='[0-9]{3}-[0-9]{2}-[0-9]{3}-[0-9]{2}' required />
                         </label>
                   </div>
                   <div className={styles.feedback}>
@@ -23,7 +24,7 @@ export const Form = () => {
                               Please rate the quality of the service you received from your host.
                               <div className={styles.questionsRatings}>
                                     <label>
-                                          <input type='checkbox' />
+                                          <input type='checkbox' className={styles.checkboxStyle} />
                                           Excellent
                                     </label>
                                     <label>
@@ -104,6 +105,7 @@ export const Form = () => {
                               </div>
                         </div>
                   </div>
+                        <input type='submit' value='Submit Review' id={styles.submit} />
             </form>
       )
 }

@@ -1,6 +1,7 @@
-import Head from 'next/head'
-import styles from '../styles/FormContainer.module.css'
-import { Form } from '../components/Form'
+import Head from 'next/head';
+import styles from '../styles/FormContainer.module.css';
+
+import { Form } from '../components/Form';
 
 
 export default function Home() {
@@ -13,7 +14,7 @@ export default function Home() {
                         <div className={styles.headerContainer}>
                               <h2 className={styles.header}>Aromatic bar</h2>
                         </div>
-                        <section className={styles.formContainer}>
+                        <section >
                               <Form />
                         </section>
                   </div>
