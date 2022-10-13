@@ -1,0 +1,44 @@
+.main {
+      width: 100vw;
+      height: 50vh;
+      text-align: center;
+      justify-content: center;
+      margin-top: 12%;
+}
+
+#icons {
+      font-size: 15vh;
+      color: #48A44C;
+      text-shadow: 0px 3px 6px #00000029;
+}
+
+#heading {
+      font-size: xx-large;
+      font-weight: bolder;
+      margin-bottom: 0.2rem;
+      color: #404B69;
+}
+
+#subtitle {
+      margin-top: 0.8rem;
+      font-size: x-large;
+      color: #707070;
+      
+}
+
+#closeButton {
+      width: 10vw;
+      height: 6vh;
+      text-align: center;
+      font-size:large;
+      border-radius: 3px;
+      background-color: #8870C9;
+      border: none;
+      color: white;
+      margin-top: 1.5rem;
+}
+
+#closeButton:hover{
+      background-color: #6e59a7;
+      cursor: pointer;
+}
