@@ -10,7 +10,7 @@ export default function(){
                   </span>
                   <p id={styles.heading}>Thank you for providing the feedback</p>
                   <p id={styles.subtitle}>We will work towards improving your experience</p>
-                  <button id={styles.closeButton}>Close</button>
+                  <button onClick={() => window.top.close()} id={styles.closeButton}>Close</button>
             </div>
       )
 }
